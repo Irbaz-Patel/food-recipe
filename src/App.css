@@ -1,0 +1,7 @@
+body{
+  overflow-x: hidden;
+}
+.custom-carousel-img {
+  height: 400px; /* Set your desired height */
+  object-fit: cover; /* Ensure the image scales correctly without distortion */
+}
