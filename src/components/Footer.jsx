@@ -5,7 +5,7 @@ const Footer = () => {
   const { theme } = useContext(FavoritesContext);
   return (
     <footer
-      className={`py-3 position-fixed w-100 text-center ${
+      className={`py-3 w-100 text-center ${
         theme === "dark" ? "bg-light text-dark" : "bg-dark text-light"
       }`}
       style={{ bottom: 0 }}

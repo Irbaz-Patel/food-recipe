@@ -6,6 +6,7 @@ import svg2 from "../images/svg2.avif";
 import { Link } from "react-router-dom";
 import {motion} from 'framer-motion'
 import LoadingBar from "react-top-loading-bar";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -182,6 +183,7 @@ const Home = () => {
         </footer>
       </div>
     </motion.div>
+    <Footer/>
    </>
   );
 };

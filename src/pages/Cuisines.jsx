@@ -105,6 +105,7 @@ const Cuisines = () => {
             {offset === 100 ? "No More Recipe" : "Load More"}
           </button>
         </div>
+        
       </div>
       <div className="container-fluid mb-5 position-relative bottom-0 w-full">
         <footer className="py-3 my-4">

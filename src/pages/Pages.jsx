@@ -28,7 +28,7 @@ const Pages = () => {
         </a>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
