@@ -3,7 +3,7 @@ import "glider-js/glider.min.css";
 import Glider from "glider-js";
 import { Link } from "react-router-dom";
 import Loading from "../context/Loading";
-import { FavoritesContext } from "../context"
+import { FavoritesContext } from "../context";
 
 const Popular = () => {
   const [popular, setPopular] = useState([]);
@@ -41,7 +41,7 @@ const Popular = () => {
   // Initialize Glider.js
   useEffect(() => {
     fetchPopular();
-  }, []); 
+  }, []);
 
   useEffect(() => {
     if (gliderRef.current && popular.length > 0) {
@@ -87,10 +87,19 @@ const Popular = () => {
                     }`}
                     style={{ width: "20rem", height: "22rem" }}
                   >
-                    <img
+                    {/* <img
                       src={recipe.image}
                       className="card-img-top object-fit-contain"
                       alt={recipe.title}
+                    /> */}
+                    <img
+                      src={recipe.image}
+                      alt={"Image not available"}
+                      style={{
+                        objectFit: "cover",
+                        width: "100%",
+                        height: "100%",
+                      }}
                     />
                     <div className="card-body">
                       <h5 className="card-title">{recipe.title}</h5>

@@ -102,7 +102,14 @@ const Cuisines = () => {
             onClick={loadMore}
             disabled={offset === 100 ? true : false}
           >
-            {offset === 100 ? "No More Recipe" : "Load More"}
+            {/* {offset === 100 ? "No More Recipe" : "Load More"} */}
+            {loading ? (
+              <span>Loading...</span>
+            ) : offset === 100 ? (
+              "No More Recipe"
+            ) : (
+              "Load More"
+            )}
           </button>
         </div>
         

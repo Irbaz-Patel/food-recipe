@@ -5,3 +5,13 @@ body{
   height: 400px; /* Set your desired height */
   object-fit: cover; /* Ensure the image scales correctly without distortion */
 }
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .dark-btn {
+    text-align: center;
+  }
+}
